@@ -1,0 +1,20 @@
+set from = "skull@darktemple.ch"
+set realname = "SKull"
+
+set imap_user = "skull@darktemple.ch"
+set imap_pass = "password"
+
+set smtp_url = "smtp://$imap_user@mail.darktemple.ch:587/"
+set smtp_pass = $imap_pass
+
+set folder = "{mail.darktemple.ch./ssl}"
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set postponed = "+Drafts"
+set trash = "+Trash"
+
+set move = no
+
+mailboxes "+INBOX"
+
+set header_cache = "~/.cache/mutt/headers"
